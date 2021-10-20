@@ -1,14 +1,13 @@
 import config from "../config";
 import colors from './colors.json';
-import { hotjar } from 'react-hotjar';
 
 export const getInitialTheme = () => {
     if (config.themeConfig.disableSwitch) {
         return config.themeConfig.default;
     }
 
-    if (localStorage.hasOwnProperty('ezprofileTheme')) {
-        let theme = localStorage.getItem('ezprofileTheme');
+    if (localStorage.hasOwnProperty('pageTheme')) {
+        let theme = localStorage.getItem('pageTheme');
         return theme;
     }
 
@@ -67,13 +66,5 @@ export const isThemeDarkish = (theme) => {
         return true;
     } else {
         return false;
-    }
-}
-
-export const setupHotjar = () => {
-    if (config.hotjar?.id) {
-        let snippetVersion = config.hotjar?.snippetVersion ? config.hotjar?.snippetVersion : 6;
-        
-        hotjar.initialize(config.hotjar.id, snippetVersion);
     }
 }

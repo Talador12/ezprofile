@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LoadingProvider } from './contexts/LoadingContext';
-import { setupHotjar } from './helpers/utils';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -22,4 +21,3 @@ ReactDOM.render(
 );
 
 reportWebVitals();
-setupHotjar();

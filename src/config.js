@@ -1,130 +1,86 @@
 // config.js
 module.exports = {
     github: {
-        username: 'arifszn', // Your GitHub org/user name. (Required)
-        sortBy: 'stars', // stars | updated
-        limit: 8, // How many projects to display.
+        username: 'Talador12',
+        sortBy: 'stars',
+        limit: 6,
         exclude: {
-            forks: false, // Forked projects will not be displayed if set to true.
-            projects: [] // These projects will not be displayed. example: ['my-project1', 'my-project2']
+            forks: false,
+            projects: [
+                'WoWAnalyzer',
+                'plwbbot',
+                'mtszkw',
+                'wardrobe-bcc',
+                'pgc-admin',
+                'proposal',
+                'pgc-api',
+                'pgc-public',
+                'swift-algorithm-club',
+                'gomumblesoundboard',
+                'risk-of-legends',
+                'game'
+            ]
         }
     },
     social: {
-        linkedin: 'ariful-alam',
-        twitter: 'arif_swozon',
-        facebook: '',
+        linkedin: 'keith-adler',
+        twitter: 'Talador12',
+        facebook: 'Talador12',
         dribbble: '',
         behance: '',
         medium: '',
         devto: '',
-        website: 'https://arifszn.github.io',
+        website: 'https://keithadler.xyz',
         phone: '',
-        email: 'contact@arifszn.com'
+        email: 'adlerkeith12@gmail.com'
     },
     skills: [
-        'PHP',
-        'Laravel',
-        'JavaScript',
-        'React.js',
-        'Vue.js',
-        'Node.js',
-        'Jquery',
-        'MySQL',
-        'Git',
-        'Docker',
-        'CSS',
-        'Antd',
-        'Tailwind',
-        'Bootstrap',
+        'Data',
+        'Kubernetes',
+        'Machine Learning',
+        'Python',
+        'Spark'
     ],
     experiences: [
         { 
-            company: 'Monstarlab Bangladesh',
-            position: 'Backend Engineer',
-            from: 'September 2021',
+            company: 'Cloudflare',
+            position: 'Machine Learning Engineer',
+            from: 'August 2020',
             to: 'Present'
-        },
-        { 
-            company: 'Orangetoolz - My Offer 360 Degree',
-            position: 'Jr. Full Stack Engineer',
-            from: 'July 2019',
-            to: 'August 2021'
-        },
-        { 
-            company: 'Techvillage',
-            position: 'Jr. Software Engineer',
-            from: 'January 2019',
-            to: ' June 2019'
         }
     ],
     education: [
         { 
-            institution: 'American International University-Bangladesh',
-            degree: 'Bachelor of Science',
-            from: '2015',
-            to: '2019'
+            institution: 'Georgia Institute of Technology',
+            degree: 'Master of Science: Computer Science',
+            from: '2013',
+            to: '2016'
         },
         { 
-            institution: 'Cantonment College, Jessore',
-            degree: 'Higher Secondary Certificate (HSC)',
-            from: '2012',
-            to: '2014',
-        },
-        { 
-            institution: 'Chowgacha Shahadat Pilot High School',
-            degree: 'Secondary School Certificate (SSC)',
-            from: '2007',
-            to: '2012'
+            institution: 'Southern Methodist University',
+            degree: 'Bachelor of Science: Computer Science',
+            from: '2009',
+            to: '2013',
         }
     ],
     blog: {
-        // Display blog posts from your medium or dev.to account. (Optional)
-        source: 'dev.to', // medium | dev.to
-        username: 'arifszn',
-        limit: 2 // How many posts to display. Max is 10.
+        source: 'medium',
+        username: 'talador12',
+        limit: 2
     },
     googleAnalytics: {
-        // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-        id: 'G-WLLB5E14M6' // Please remove this and use your own tag id
-    },
-    hotjar: {
-        id: '2617601', //  Please remove this and use your own id
-        snippetVersion : 6
+        id: 'G-499X8FRS4Q'
     },
     themeConfig: {
-        default: 'light',
-
-        // Hides the switch in the navbar
-        // Useful if you want to support a single color mode
-        disableSwitch: false,
-
-        // Should we use the prefers-color-scheme media-query,
-        // using user system preferences, instead of the hardcoded default
+        default: 'dark',
+        disableSwitch: true,
         respectPrefersColorScheme: true,
-
-        // Available themes. To remove any theme, exclude from here.
         themes: [
-            'light',
-            'dark',
-            'cupcake',
-            'bumblebee',
-            'emerald',
             'corporate',
-            'synthwave',
-            'retro',
-            'cyberpunk',
-            'valentine',
+            'dark',
+            'dracula',
             'halloween',
-            'garden',
-            'forest',
-            'aqua',
-            'lofi',
-            'pastel',
-            'fantasy',
-            'wireframe',
-            'black',
-            'luxury',
-            'dracula'
+            'light'
         ]
     }
 }

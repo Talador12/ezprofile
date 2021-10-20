@@ -33,23 +33,23 @@ const MetaTags = (props) => {
                                 </script>
                             )
                         }
-                        <title>Portfolio of {props.profile.name}</title>
+                        <title>{props.profile.name}</title>
                         <meta name="theme-color" content={isThemeDarkish(theme) ? '#000000' : '#ffffff'}/>
 
                         <meta name="description" content={props.profile.bio} />
 
-                        <meta itemprop="name" content={`Portfolio of ${props.profile.name}`} />
+                        <meta itemprop="name" content={`${props.profile.name}`} />
                         <meta itemprop="description" content={props.profile.bio} />
                         <meta itemprop="image" content={props.profile.avatar} />
 
                         <meta property="og:url" content={typeof config.social.website !== 'undefined' ? config.social.website : ''} />
                         <meta property="og:type" content="website" />
-                        <meta property="og:title" content={`Portfolio of ${props.profile.name}`} />
+                        <meta property="og:title" content={`${props.profile.name}`} />
                         <meta property="og:description" content={props.profile.bio} />
                         <meta property="og:image" content={props.profile.avatar} />
 
                         <meta name="twitter:card" content="summary_large_image" />
-                        <meta name="twitter:title" content={`Portfolio of ${props.profile.name}`} />
+                        <meta name="twitter:title" content={`${props.profile.name}`} />
                         <meta name="twitter:description" content={props.profile.bio} />
                         <meta name="twitter:image" content={props.profile.avatar} />
                     </Helmet>
